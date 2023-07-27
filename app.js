@@ -1,5 +1,6 @@
-const port = process.env.PORT || 3000;
 const express = require("express");
+
+const port = process.env.PORT || 3000;
 const app = express();
 app.get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
